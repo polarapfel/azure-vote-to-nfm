@@ -1,3 +1,7 @@
+global:
+  repositorybase: containernetworkfunctiondf.azurecr.io
+  imagePullSecrets: []
+
 replicaCount: 2
 
 nameOverride: ""
@@ -7,7 +11,6 @@ env:
   redis: "azure-vote-back"
 
 image:
-  repository: mcr.microsoft.com/azuredocs/azure-vote-front
   pullPolicy: IfNotPresent #Always
   tag: "" #image tag should be set in Chart.yaml - but where it's a strange tag, just override here
 

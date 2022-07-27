@@ -1,10 +1,13 @@
+global:
+  repositorybase: containernetworkfunctiondf.azurecr.io
+  imagePullSecrets: []
+
 replicaCount: 1
 
 nameOverride: ""
 fullnameOverride: ""
 
 image:
-  repository: mcr.microsoft.com/oss/bitnami/redis
   pullPolicy: IfNotPresent #Always
   tag: "" #image tag should be set in Chart.yaml - but where it's a strange tag, just override here
 
